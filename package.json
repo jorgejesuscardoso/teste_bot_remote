@@ -3,26 +3,28 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npx ts-node src/main.ts",
+    "start": "npx ts-node src/main.ts && npm run server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon src/routes/server.ts"
+    "server": "nodemon src/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
   "devDependencies": {
     "@types/node": "^24.1.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@types/express": "^5.0.3",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
     "@types/qrcode-terminal": "^0.12.2",
     "@whiskeysockets/baileys": "^6.7.18",
     "axios": "^1.11.0",
     "chalk": "^4.1.2",
-    "express": "^5.1.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
     "link-preview-js": "^3.1.0",
     "nodemon": "^3.1.10",
     "qrcode-terminal": "^0.12.0"
