@@ -20,13 +20,16 @@ export class MsgTo {
   }
 
   toDira() {
-    return "Oque desejas, 0.7? 😁🤭😂"
+    return "Salve 0.7. Mais conhecida como esposa do V. Como posso ajudar? 🤖👑"
   }
 
   toLeh() {
-    return "Salve Leh!👑 Não me bane não, eu juro que tô de boa 🙏😂"
+    return "Salve Leh! Ainda em lua de mel com o Namjoon? 🥳"
   }
 
+  toDino() {
+    return "Eae Dino! Sabia que minha esposa quer a tua cabeça? 🦖"
+  }
 }
 
 

@@ -11,6 +11,7 @@ export const BullyingList = [
   "tonto",
   "otária",
   "falso",
+  "safado",
   "falsa",
   "fingida",
   "fingido",

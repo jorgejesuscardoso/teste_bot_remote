@@ -14,13 +14,14 @@ import { FallingInLoveList, MarryList } from '../utils/list/fallInLoveList'
 import { tantrumMsg, textRemove } from '../utils/msg/msgTantrum'
 
 const phoneNumbers = {
-  bot: '557381062081',
+  bot: '120363402452354299',
   yu: '180603542630589', 
   bushido: '67350002954389', 
-  erica: '557391831250',
+  erica: '220001260826673',
   anna: '236077289853042',
-  dira: '557499385661',
-  leh: '558587626062',
+  dira: '149993260380277',
+  leh: '139556909273315',
+  dino: '132925093851338',
 }
 
 function normalizeText(txt: string) {
@@ -145,6 +146,7 @@ export class Bot {
       anna: normalize(phoneNumbers.anna),
       dira: normalize(phoneNumbers.dira),
       leh: normalize(phoneNumbers.leh),
+      dino: normalize(phoneNumbers.dino),
     };
 
    
@@ -385,6 +387,8 @@ export class Bot {
           response = this.msgTo.toLeh();
         } else if (senderIdNormalize === numbers.bushido) {
           response = this.msgTo.toBushido();
+        } else if (senderIdNormalize === numbers.dino) {
+          response = this.msgTo.toDino();
         }
 
       await this.wa.sendMessage(sender, { text: response }, { quoted: msg })
