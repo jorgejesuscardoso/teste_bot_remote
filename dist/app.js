@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.bot = exports.waService = void 0;
+const WaServices_1 = require("./services/WaServices");
+const Bot_1 = require("./core/Bot");
+const msgPersonality_1 = require("./utils/msg/msgPersonality");
+const msgAboutBullying_1 = require("./utils/msg/msgAboutBullying");
+const behavior_1 = require("./utils/list/behavior");
+exports.waService = new WaServices_1.WhatsAppService();
+const msgTo = new msgPersonality_1.MsgTo();
+const msgAboutBullying = new msgAboutBullying_1.MsgAboutBullying();
+const behaviorList = behavior_1.BehaviorList;
+exports.bot = new Bot_1.Bot(exports.waService, msgTo, msgAboutBullying);
