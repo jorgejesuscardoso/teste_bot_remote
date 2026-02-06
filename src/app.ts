@@ -10,3 +10,4 @@ const msgAboutBullying = new MsgAboutBullying()
 const behaviorList = BehaviorList
 
 export const bot = new Bot(waService, msgTo, msgAboutBullying)
+
