@@ -3,7 +3,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.bootstrap = bootstrap;
 // main.ts (ou onde você dá o start)
 const app_1 = require("./app");
 const express_1 = __importDefault(require("express"));
@@ -114,6 +113,7 @@ Estamos felizes em ter você como parte da nossa comunidade.
     });
     app.listen(8000, () => console.log("🚀 Bot API rodando na porta 8000"));
 }
+bootstrap();
 // manter servidor ativo
 setInterval(async () => {
     console.log("🔄 Mantendo o servidor ativo...");

@@ -5,7 +5,7 @@ import { waService } from "./app"
 import axios from "axios"
 import { GROUPS } from "./groups"
 
-export async function bootstrap() {
+async function bootstrap() {
   await bot.start()
   console.log("🤖 Bot Whats rodando!")
 
@@ -132,6 +132,8 @@ Estamos felizes em ter você como parte da nossa comunidade.
 
   app.listen(8000, () => console.log("🚀 Bot API rodando na porta 8000"))
 }
+
+bootstrap()
 
 // manter servidor ativo
 setInterval(async () => {
